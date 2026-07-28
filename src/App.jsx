@@ -10,6 +10,7 @@ import Loader from './components/Loader'
 import AnimatedBackground from './components/AnimatedBackground'
 import FloatingIcons from './components/FloatingIcons'
 import SectionTitle from './components/SectionTitle'
+import ProfileSample from './assets/Screenshot 2026-07-22 161548.png'
 import { heroRoles, aboutStats, skillGroups, educationItems, projects, experienceItems, achievements, publications, contactInfo, navItems } from './data/portfolioData'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -158,8 +159,8 @@ const App = () => {
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} className="relative mx-auto flex w-full max-w-md items-center justify-center">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/30 via-violet-400/20 to-transparent blur-3xl" />
-              <div className="relative h-72 w-72 rounded-full border border-cyan-400/30 bg-slate-900/70 p-3 shadow-[0_0_80px_rgba(59,130,246,0.2)] backdrop-blur">
-                <div className="h-full w-full rounded-full border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(6,182,212,0.35),_transparent_40%),linear-gradient(135deg,_rgba(17,24,39,0.95),_rgba(3,7,18,0.75))]" />
+              <div className="relative h-72 w-72 rounded-full border border-cyan-400/30 bg-slate-900/70 p-3 shadow-[0_0_80px_rgba(59,130,246,0.2)] backdrop-blur flex items-center justify-center overflow-hidden">
+                <img src={ProfileSample} alt="Profile placeholder" className="h-full w-full rounded-full object-cover" />
               </div>
               <div className="absolute h-[20rem] w-[20rem] rounded-full border border-cyan-300/50" />
               <div className="absolute h-[22rem] w-[22rem] rounded-full border border-violet-400/30" />
@@ -342,13 +343,23 @@ const App = () => {
                       <h3 className="mt-2 text-2xl font-semibold text-white">{item.position}</h3>
                       <p className="mt-2 text-slate-400">{item.company}</p>
                     </div>
-                    <button className="rounded-full border border-white/10 px-4 py-2 text-sm text-slate-200 transition hover:border-cyan-400/40 hover:text-cyan-300">Certificate</button>
+                    <div className="rounded-full border border-cyan-400/20 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-200">Certificate</div>
                   </div>
                   <ul className="mt-6 space-y-3 text-slate-400">
                     {item.responsibilities.map((responsibility) => <li key={responsibility} className="flex items-start gap-2"><FiArrowRight className="mt-1 text-cyan-300" />{responsibility}</li>)}
                   </ul>
                   <div className="mt-6 flex flex-wrap gap-2">
                     {item.technologies.map((tech) => <span key={tech} className="rounded-full bg-white/5 px-3 py-1 text-sm text-slate-300">{tech}</span>)}
+                  </div>
+                  <div className="mt-6 rounded-2xl border border-white/10 bg-slate-950/70 p-4">
+                    <div className="flex flex-col gap-4 lg:flex-row lg:items-start">
+                      <img src={item.certificate.image} alt={item.certificate.title} className="h-60 w-full max-w-[280px] rounded-2xl border border-white/10 object-cover shadow-lg" />
+                      <div className="flex-1">
+                        <p className="text-sm uppercase tracking-[0.25em] text-cyan-300">Certificate Preview</p>
+                        <h4 className="mt-2 text-xl font-semibold text-white">{item.certificate.title}</h4>
+                        <p className="mt-3 text-sm leading-7 text-slate-400">{item.certificate.description}</p>
+                      </div>
+                    </div>
                   </div>
                 </motion.div>
               ))}

@@ -12,6 +12,8 @@ import {
   FaBrain,
 } from 'react-icons/fa'
 import { SiJavascript, SiPython, SiTailwindcss, SiMongodb, SiDocker, SiTensorflow } from 'react-icons/si'
+import certificateAi from '../assets/Screenshot 2026-07-22 145012.png'
+import certificateEditing from '../assets/Screenshot 2026-07-22 145402.png'
 
 export const navItems = [
   { id: 'home', label: 'Home' },
@@ -26,10 +28,10 @@ export const navItems = [
 export const heroRoles = ['AI Developer', 'Professional Editor', 'Game Designer', 'Freelancer', 'Tech Enthusiast']
 
 export const aboutStats = [
-  { label: 'Years of Learning', value: '5+' },
-  { label: 'Projects Completed', value: '24' },
-  { label: 'Certifications', value: '12' },
-  { label: 'Publications', value: '6' },
+  { label: 'Years of Learning', value: '2+' },
+  { label: 'Projects Completed', value: '4' },
+  { label: 'Certifications', value: '7+' },
+  { label: 'Publications', value: '3+' },
 ]
 
 export const skillGroups = [
@@ -128,6 +130,11 @@ export const experienceItems = [
     duration: '2024 — Present',
     responsibilities: ['Built creative digital projects', 'Delivered freelance design and development work', 'Explored AI-assisted workflows'],
     technologies: ['React', 'TypeScript', 'AI Tools', 'Editing Software'],
+    certificate: {
+      image: certificateAi,
+      title: 'AI & Innovation Certificate',
+      description: 'This certificate reflects hands-on growth in AI-assisted development, creative problem solving, and modern digital product building.',
+    },
   },
   {
     company: 'Campus & Creative Work',
@@ -135,14 +142,19 @@ export const experienceItems = [
     duration: '2022 — Present',
     responsibilities: ['Worked on modern web and design concepts', 'Created editing and content-driven visuals', 'Developed problem-solving skills through projects'],
     technologies: ['HTML', 'CSS', 'JavaScript', 'Figma', 'Premiere Pro'],
+    certificate: {
+      image: certificateEditing,
+      title: 'Creative & Professional Editing Certificate',
+      description: 'This certificate highlights strong visual storytelling, editing discipline, and polished content creation for digital experiences.',
+    },
   },
 ]
 
 export const achievements = [
-  { title: 'Global Hackathon', subtitle: '1st place — AI for Social Impact', icon: '⚡' },
-  { title: 'Certified Cloud Architect', subtitle: 'AWS Associate', icon: '☁️' },
+  { title: 'Running Several Projects', subtitle: 'Active work across multiple digital builds', icon: '⚡' },
   { title: 'Open Source Awards', subtitle: 'Top contributor in 2024', icon: '🏅' },
-  { title: 'Code Olympiad', subtitle: 'Ranked top 5%', icon: '🧠' },
+  { title: 'Code Olympiad', subtitle: 'Ranked top 18%', icon: '🧠' },
+  { title: 'Professional Growth', subtitle: 'Continuously expanding technical and creative skills', icon: '🌱' },
 ]
 
 export const publications = [
