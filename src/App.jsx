@@ -14,7 +14,6 @@ import ProfileSample from './assets/Screenshot 2026-07-22 161548.png'
 import { heroRoles, aboutStats, skillGroups, educationItems, projects, experienceItems, achievements, publications, contactInfo, navItems } from './data/portfolioData'
 
 gsap.registerPlugin(ScrollTrigger)
-
 const socialLinks = [
   { label: 'GitHub', href: 'https://github.com/BLESSANspark', icon: FaGithub },
   { label: 'Email', href: 'mailto:sparkxmt@gmail.com', icon: FiMail },
