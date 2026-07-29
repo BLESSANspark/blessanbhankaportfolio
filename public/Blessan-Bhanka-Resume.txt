@@ -1,19 +1,36 @@
-Blessan Bhanka
-AI Developer | Professional Editor | Game Designer | Freelancer
-Diploma Final Year Student
-A.A.N.M. & V.V.R.S.R Polytechnic
-Reddigudem, NTR District, Andhra Pradesh, India
-Email: sparkxmt@gmail.com
-Phone: +91 7382672411
-GitHub: https://github.com/BLESSANspark
 
-Profile
-I am a Diploma Final Year student passionate about Artificial Intelligence, software development, creative editing, and game design. I enjoy building modern digital experiences and developing AI-powered solutions.
+Bhanka Blessan
+Web Developer | Game Designer | Video Editor
+Phone: +91 7382672411 | Email: sparkxmt@gmail.com
+Location: Reddigudem, NTR District, Andhra Pradesh, India
+GitHub: github.com/BLESSANspark | LinkedIn: linkedin.com/in/blessan-bhanka-9425b3411
+
+Professional Summary
+Motivated final-year Computer Engineering student with experience in web development, game
+design, and professional video editing. Skilled in building responsive web applications and creative
+digital projects. Passionate about learning modern technologies and contributing to real-world
+software solutions.
+
+Education
+AANM & VVRSR Polytechnic, Gudlavalleru
+Diploma in Computer Engineering (Final Year)
+Expected Graduation: 2027 | CGPA: 9.8/10
 
 Skills
-AI Development, Prompt Engineering, Game Designing, Professional Editing, Freelancing, Web Development, React, JavaScript, TypeScript, Python, Java, HTML, CSS, DBMS
+HTML, CSS, JavaScript, React.js, Git, GitHub, Vercel, VS Code, Responsive Web Design, Unity
+Game Design, Professional Video Editing, Freelancing
 
 Projects
-- Smart College ERS
-- Christ Fellowship Church
-- Spark Fashions
+- Smart College ERS Management System – Admin dashboard for student/faculty management
+	using React.
+- Christ Fellowship Church Website – Responsive church website.
+- Spark Fashions Website – Modern fashion business website.
+- Alpha Restaurant Website – Responsive restaurant website.
+
+Certifications & Achievements
+Unity Game Design Certificate; HackerEarth Hackathon Runner; Ranked in the top 5% in a global
+game development assessment; Mentors beginners in game development.
+
+Languages
+Telugu, English, Hindi, Tamil
+

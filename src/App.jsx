@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import { FiDownload, FiArrowRight, FiGithub, FiMail, FiSend, FiChevronDown, FiExternalLink, FiMoon, FiSun, FiArrowUp } from 'react-icons/fi'
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import Lenis from 'lenis'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -10,12 +10,13 @@ import Loader from './components/Loader'
 import AnimatedBackground from './components/AnimatedBackground'
 import FloatingIcons from './components/FloatingIcons'
 import SectionTitle from './components/SectionTitle'
-import ProfileSample from './assets/Screenshot 2026-07-22 161548.png'
+import ProfileImage from './assets/potfolioimg1.jpeg'
 import { heroRoles, aboutStats, skillGroups, educationItems, projects, experienceItems, achievements, publications, contactInfo, navItems } from './data/portfolioData'
 
 gsap.registerPlugin(ScrollTrigger)
 const socialLinks = [
   { label: 'GitHub', href: 'https://github.com/BLESSANspark', icon: FaGithub },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/your-profile', icon: FaLinkedin },
   { label: 'Email', href: 'mailto:sparkxmt@gmail.com', icon: FiMail },
 ]
 
@@ -157,13 +158,15 @@ const App = () => {
               </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} className="relative mx-auto flex w-full max-w-md items-center justify-center">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/30 via-violet-400/20 to-transparent blur-3xl" />
-              <div className="relative h-72 w-72 rounded-full border border-cyan-400/30 bg-slate-900/70 p-3 shadow-[0_0_80px_rgba(59,130,246,0.2)] backdrop-blur flex items-center justify-center overflow-hidden">
-                <img src={ProfileSample} alt="Profile placeholder" className="h-full w-full rounded-full object-cover" />
+              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-cyan-400/30 via-violet-400/20 to-transparent blur-3xl" />
+              <div className="relative h-[24rem] w-[18rem] overflow-hidden rounded-[2rem] border border-cyan-400/40 bg-slate-900/80 p-3 shadow-[0_0_90px_rgba(34,211,238,0.22)] backdrop-blur sm:h-[28rem] sm:w-[20rem]">
+                <div className="absolute inset-0 rounded-[2rem] border border-white/10" />
+                <div className="absolute inset-3 rounded-[1.6rem] bg-gradient-to-br from-cyan-400/15 via-transparent to-violet-500/10" />
+                <img src={ProfileImage} alt="Blessan Bhanka profile" className="relative h-full w-full rounded-[1.5rem] object-cover bg-slate-950/70 p-2 shadow-[0_0_35px_rgba(56,189,248,0.28)]" />
               </div>
-              <div className="absolute h-[20rem] w-[20rem] rounded-full border border-cyan-300/50" />
-              <div className="absolute h-[22rem] w-[22rem] rounded-full border border-violet-400/30" />
-              <motion.div animate={{ rotate: 360 }} transition={{ duration: 14, repeat: Infinity, ease: 'linear' }} className="absolute h-[25rem] w-[25rem] rounded-full border border-dashed border-cyan-400/30" />
+              <div className="absolute inset-0 m-[-0.6rem] rounded-[2.4rem] border border-cyan-300/50 shadow-[0_0_70px_rgba(34,211,238,0.24)]" />
+              <div className="absolute inset-0 m-[-1.4rem] rounded-[2.8rem] border border-violet-400/30" />
+              <motion.div animate={{ rotate: 360 }} transition={{ duration: 14, repeat: Infinity, ease: 'linear' }} className="absolute inset-0 m-[-2rem] rounded-[3.2rem] border border-dashed border-cyan-400/30" />
             </motion.div>
           </div>
           <div className="mx-auto mt-16 flex max-w-7xl justify-center text-slate-400">
